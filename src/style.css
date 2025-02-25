@@ -196,6 +196,19 @@
     }
   }
 
+  .netlify-logo {
+    max-width: 40px;
+    max-height: 40px;
+    vertical-align: middle;
+  }
+
+  .social-links {
+    display: flex;
+    gap: 20px; 
+    justify-content: center;
+    align-items: center;
+  }
+
   footer {
     font-size: 10px;
     text-align: center;
