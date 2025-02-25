@@ -184,7 +184,8 @@
 
   @media (max-width: 768px) {
     img#pic-index {
-      display: none;
+      display: none !important;
+      visibility: hidden !important;
     }
     .description {
       text-align: center;
