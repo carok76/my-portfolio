@@ -1,3 +1,7 @@
+* {
+  box-sizing: border-box;
+}
+
 :root {
   --shadow: 0px 10px 20px rgba(255, 255, 255, 0.3);
 }
@@ -109,19 +113,11 @@
     font-weight: 900;
     font-style: italic;
   }
-  
-  .roboto-<uniquifier> {
-    font-family: "Roboto", serif;
-    font-optical-sizing: auto;
-    font-weight: <weight>;
-    font-style: normal;
-    font-variation-settings:
-      "wdth" 100;
-  }
 
   body {
     background-color: black;
     color: white;
+    overflow-x: hidden;
   }
 
   .stage {
@@ -152,8 +148,9 @@
   }
 
   #pic-index {
-    max-height: 300px;
-    margin-left: 200px;
+  max-height: 300px;
+  margin: 0 auto;
+  display: block;
   }
 
   .primary-link {
@@ -184,12 +181,36 @@
 
   @media (max-width: 768px) {
     img#pic-index {
-      display: none !important;
-      visibility: hidden !important;
+    display: block !important;
+    visibility: visible !important;
+    margin: 0 auto 20px auto;
+    max-height: none;
+    max-width: 80%;
     }
+
+      h1 {
+    font-size: 28px;
+    margin: 15px;
+  }
+
+  h2 {
+    font-size: 18px;
+    margin: 15px;
+  }
+
+  h3 {
+    font-size: 14px;
+    margin: 15px;
+  }
+
+  p {
+    margin: 15px;
+  }
+
     .description {
       text-align: center;
     }
+
     .button-link {
       margin: 30px auto;
       display: flex;
